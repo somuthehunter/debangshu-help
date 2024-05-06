@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>Ratnasmriti Gems & Jewellers</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="total_body">
+        <div class="top_nav">
+            <div class="title">
+                <h2 style="font-family: Plus Jakarta Sans;">Ratnasmriti Gems & Jewellers</h2>
+            </div>
+            <div class="menu">
+                <ul id="sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Catagory &dtrif;</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Catagory 1</a></li>
+                            <li><a href="#">Catagory 2</a></li>
+                            <li><a href="#">Catagory 3</a></li>
+                            <li><a href="#">Catagory 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url " landing_notice" %}">Contact US</a></li>
+
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="menuIcon" onclick="openmenu()"></i>
+
+        </div>
+
+        <div class="logo_title">
+            <div class="logo"><img src="images/logo.jpeg" alt=""></div>
+            <div class="logo_text">
+                <h2 style="font-family: Plus Jakarta Sans;">Ratnasmriti Gems & Jewellers</h2>
+            </div>
+        </div>
+        <div class="social_links">
+            <a href="tel:+916291176902" title="Click Here to Call Us"><i class="fa-solid fa-square-phone"></i></a>
+            <a href="https://www.facebook.com/rsjchannel/" target="_blank" title="Visit Our Facebook Page "><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtu.be/Jgcmim_NTIM" target="_blank" title="Visite Our YouTube Channel"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://maps.app.goo.gl/4RfrmAmUnJcNtucw8" target="_blank"
+                title="Click Here to See our Shop Location"><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+
+        <div class="main_body">
+            <!-- this is image slider  -->
+            <div class="slider-container">
+                <div class="image-container">
+                    <img class="slimg" src="images/store2.jpeg" alt="image">
+                    <img class="slimg" src="images/store2.jpeg" alt="image">
+                    <img class="slimg" src="images/store2.jpeg" alt="image">
+                    <img class="slimg" src="images/store2.jpeg" alt="image">
+                    <img class="slimg" src="images/store2.jpeg" alt="image">
+                </div>
+                <i class="fas fa-angle-double-left btn prev"></i>
+                <i class="fas fa-angle-double-right btn next"></i>
+                <div class="dots-container"></div>
+            </div>
+            <!-- this is populer products -->
+            <div class="popular_products">
+                <div class="popular_title">
+                    <h2>Popular Products</h2>
+                </div>
+                <div class="popular_container" id="popularContainer1">
+                    <div class="popular_card slpop" onclick="window.location.href = 'product_page.html';">
+                        <div class="pop_card_image"><img src="images/pop1.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slpop" onclick="window.location.href = 'product_page.html';">
+                        <div class="pop_card_image"><img src="images/pop2.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slpop" onclick="window.location.href = 'product_page.html';">
+                        <div class="pop_card_image"><img src="images/pop3.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slpop" onclick="window.location.href = 'product_page.html';">
+                        <div class="pop_card_image"><img src="images/pop4.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- this is catagory products -->
+            <div class="popular_products catagory">
+                <div class="popular_title">
+                    <h2>Shop by Catagories</h2>
+                </div>
+                <div class="popular_container" id="popularContainer">
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/emerald.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/emmithist.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/irani firoza.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/jarkan.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/blue sapphere.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/red coral.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/rubby.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/topoz.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/braceletes.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/Pearl.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/Cat's_eye.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/Hessonite Garnet.jpeg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/pop1.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/pop2.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/pop3.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="popular_card slcard" onclick="window.location.href = 'catagory.html';">
+                        <div class="pop_card_image"><img src="images/pop4.jpg" alt=""></div>
+                        <div class="pop_card_text">
+                            <div class="description">This is a Very popular product</div>
+                            <div class="price">Starting Form Rs:2000</div>
+                            <div class="call_now"><a href="#"><i class="fa-solid fa-square-phone"></i></a></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            
+            <!-- Review Section  -->
+
+            <section id="testimonials">
+                <div class="testimonial-heading">
+                    <span>Reviews</span>
+                    <h4>Clients Says</h4>
+                </div>
+                <div class="testimonial-box-container">
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/Pearl.jpeg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>Debangshu Dey</strong>
+                                    <span>@deb</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/braceletes.jpeg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>Rupak Swar</strong>
+                                    <span>@rup</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/Cat's_eye.jpeg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>Pritam Dutta</strong>
+                                    <span>@prit</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/jarkan1.jpeg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>user</strong>
+                                    <span>@user</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <script src='https://kit.fontawesome.com/c8e4d183c2.js'></script>
+              
+
+
+
+
+
+<!-- Astrologer and Owner  -->
+           <h2 class="owner">Astrologer & Owner</h2>
+<div class="main-content">
+    <!-- astrologer  -->
+           <div class="card-container">
+            <span class="pro">Astrologer</span>
+            <img class="round" src="images/Astro.jpeg" alt="user" />
+            <h3>Astro Name</h3>
+            <h6>Place</h6>
+            <p>Work <br/> Date of sitting</p>
+            <div class="buttons">
+                <button class="primary">
+                    Message
+                </button>
+                
+                <button class="primary ghost" >
+                    <a href="tel:+916295184794"> Call </a>
+                </button>
+            
+            </div>
+            <div class="skills">
+                <h6>Specialist For : </h6>
+                <ul>
+                    <li>UI / UX</li>
+                    <li>Front End Development</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- owner  -->
+
+        <div class="card-container">
+            <span class="pro">Owner</span>
+            <img class="round" src="images/owner.jpeg" alt="user" />
+            <h3>Astro Name</h3>
+            <h6>Place</h6>
+            <p>Work <br/> Date of sitting</p>
+            <div class="buttons">
+                <button class="primary">
+                    Message
+                </button>
+                
+                <button class="primary ghost" >
+                    <a href="tel:+916295184794"> Call </a>
+                </button>
+            
+            </div>
+            <div class="skills">
+                <h6>Specialist For : </h6>
+                <ul>
+                    <li>Works</li>
+                    <li>Front End Development</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+       
+
+            <!-- this is location -->
+            <div class="location">
+                <div class="astro_title">
+                    <h2>Shop Location</h2>
+                </div>
+                <div class="location_container">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0868622328953!2d88.38248347531045!3d22.910166779252748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8936c18c18c57%3A0x94fadfa5b69102b0!2sRATNASMRITI%20GEMS%20%26%20JEWELLERS!5e0!3m2!1sen!2sin!4v1709714382605!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="address">Sarat Sarani Rd, near Canara Bank, More, Chinsurah, West Bengal 712103</div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="owner-photo">
+                <img src="images/logo.jpeg" alt="Owner Photo">
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="catagory.html">Catagories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#gallary">Gallary</a></li>
+                    <li><a href="#slot">Store</a></li>
+                    <li><a href="product_page.html">Blogs</a></li>
+                    <li><a href="#slot">Review</a></li>
+                </ul>
+                
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/rsjchannel/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://youtu.be/Jgcmim_NTIM"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>
